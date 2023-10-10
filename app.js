@@ -1,18 +1,8 @@
 const http = require('http');
+const fs = require('fs');
+const routes = require('./routes.js')
 
-// function rqListener(req, res) {
-//     console.log(req);
-// };
-// const server = http.createServer(rqListener);
-const server = http.createServer((req, res) => {
-    console.log(req.url, req.method, req.headers);
-    res.setHeader('Content-Type', 'text / html ');
-    res.write('<html>');
-    res.write('<head><title>My first Page</title></head>');
-    res.write('<body><h1>Hello my first Node JS App</h1></body>')
-    res.write('</title>');
-    res.write('</html>');
-    res.end();
-    // process.exit();
-});
+console.log(routes.someText);
+const server = http.createServer(routes.handler);
+
 server.listen(3000);

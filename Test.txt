@@ -1,0 +1,167 @@
+String Challenge
+Have the
+function StringChallenge(strArr) take the array of strings stored in strArr,
+    which will contain only two strings, the first parameter being the string N and the second
+parameter being a string K of some characters, and your goal is to determine the smallest
+substring of N that contains all the characters in K.For example: if strArr is["aaabaaddae", "aed"]
+then the smallest substring of N that contains the characters a, e, and d is "dae"
+located at the end of the
+string.
+So
+for this example your program should
+return the string dae.
+
+Another example: if strArr is["aabdccdbcacd", "aad"] then the smallest substring of N
+that contains all of the characters in K is "aabd"
+which is located at the beginning of the string.
+Both parameters will be strings ranging in length from 1 to 50 characters and all of K 's characters will exist 
+somewhere in the string N.Both strings will only contains lowercase alphabetic characters.
+Once your
+function is working, take the final output string and remove any characters(
+    case -insensitive) from it
+that appear in your ChallengeToken.If the new final string is empty,
+    return the string EMPTY.
+
+Your ChallengeToken: fcx9yped8
+Examples
+Input: new string[] { "ahffaksfajeeubsne", "jefaa" }
+Output: aksfaje
+Final Output: aksaj
+Input: new string[] { "aaffhkksemckelloe", "fhea" }
+Output: affhkkse
+Final Output: ahkks
+
+
+
+function StringChallenge(strArr) {
+
+    // code goes here  
+    return strArr;
+
+}
+
+// keep this function call here 
+console.log(StringChallenge(readline()));
+
+
+["ahffaksfajeeubsne", "jefaa"]
+
+
+
+
+String Challenge
+Have the function StringChallenge(str) read the str parameter being passed which will be a string of HTML DOM elements
+ and plain text. The elements that will be used are: b, i, em, div, p. For example: if str is
+  "<div><b><p>hello world</p></b></div>" then this string of DOM elements is nested correctly so 
+  your program should return the string true.
+
+If a string is not nested correctly, return the first element encountered where, if changed into a different element,
+ would result in a properly formatted string. If the string is not formatted properly, then it will only be one element
+  that needs to be changed. For example: if str is "<div><i>hello</i>world</b>" then your program should return 
+  the string div because if the first <div> element were changed into a <b>, the string would be properly formatted.
+Once your function is working, take the final output string and remove any characters (case-insensitive) 
+from it that appear in your ChallengeToken. If the new final string is empty, return the string EMPTY.
+
+Your ChallengeToken: fcx9yped8
+Examples
+Input: "<div><div><b></b></div></p>"
+Output: div
+Final Output: iv
+Input: "<div>abc</div><p><em><i>test test test</b></em></p>"
+Output: i
+Final Output: i
+Browse Resources
+Search for any help or documentation you might need for this problem. For example: array indexing, 
+Ruby hash tables, etc.
+
+function StringChallenge(str) { 
+
+  // code goes here  
+  return str; 
+
+}
+   
+// keep this function call here 
+console.log(StringChallenge(readline()));
+
+"<div><div><b></b></div></p>"
+
+
+Front-end Challenge
+We provided some simple Angular template code. Your goal is to add 2 input forms in the component for first name and 
+last name. Once both forms are filled out by the user and the "Generate" button is clicked, then next to the 
+button a username should be automatically generated which should be in the following format: 
+[firstname]_[lastname]_[random integer]. First name and last name should be lowercased, and then a random integer 
+between 1 and 9 should be added to the end. For example: if the inputs are "Daniel" and "SMITH" the 
+generated username could be "daniel_smith_4" or "daniel_smith_2".
+
+When your application loads, the input fields should be prepopulated with the following values already:
+
+First name = Coder
+Last name = Byte
+
+You are free to add classes and styles, but make sure you leave the component ID's and clases provided as 
+they are. Submit your code once it is complete and our system will validate your output.
+Browse Resources
+Search for any help or documentation you might need for this problem. For example: array indexing, Ruby 
+hash tables, etc.
+
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-area',
+  template: '' +
+    '<div>' +
+      '<input type="text" value="firstname" id="firstname">' +
+      '<input type="text" value="lastname" id="lastname">' +
+      '<button>Generate</button>' + 
+      '<span id="output">generated username...</span>' +
+    '</div>',
+  styles: []
+})
+
+export class MainAppComponent implements OnInit {
+  // code goes here
+  ngOnInit() { 
+    
+  }
+}
+
+
+Array Challenge
+Have the function ArrayChallenge(arr) take the arr parameter being passed which will be an array of non-negative 
+integers and circularly rotate the array starting from the Nth element where N is equal to the first integer in 
+the array. For example: if arr is [2, 3, 4, 1, 6, 10] then your program should rotate the array starting from the 
+2nd position because the first element in the array is 2. The final array will therefore be [4, 1, 6, 10, 2, 3],
+ and your program should return the new array as a string, so for this example your program would return 4161023.
+  The first element in the array will always be an integer greater than or equal to 0 and less than the 
+  size of the array.
+Once your function is working, take the final output string and remove any characters (case-insensitive) from it
+ that appear in your ChallengeToken. If the new final string is empty, return the string EMPTY.
+
+Your ChallengeToken: fcx9yped8
+Examples
+Input: [3,2,1,6]
+Output: 6321
+Final Output: 6321
+Input: [4,3,4,3,1,2]
+Output: 124343
+Final Output: 124343
+Browse Resources
+Search for any help or documentation you might need for this problem. For example: array indexing, 
+Ruby hash tables, etc.
+
+
+function ArrayChallenge(arr) { 
+
+  // code goes here  
+  return arr; 
+
+}
+   
+// keep this function call here 
+console.log(ArrayChallenge(readline()));
+
+
+[3,2,1,6]
